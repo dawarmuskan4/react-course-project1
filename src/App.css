@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+*{
+  margin: 10px;
+  background-color: #282D35;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #21222A;
+  height: 90px;
+  padding: 30px 25px;
+}
+
+.navbar_logo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar_img{
+  width: 100px;
+  margin-right: 7px;
+}
+
+.navbar-logo-text{
+  margin-right: auto;
+  color: #61DAFB;
+  font-weight: 700;
+  font-size: 22px;
+} 
+
+.navbar-title{
+  color: #DEEBF8;
+  font-weight: 600;
+} 
+
+.main{
+  padding: 57px 27px;
   color: white;
+  background-image: url('./assets/react-icon-large.png');
+  background-repeat: no-repeat;
+  background-position: right 75%;
 }
 
-.App-link {
-  color: #61dafb;
+.main-title{
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: -0.05em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-facts{
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.main-facts > li {
+  line-height: 19px;
+  padding-block: 10px;
+} 
+
+.main-facts > li::marker{
+  font-size: 1.4rem;
+  color: #61DAFB;
 }
